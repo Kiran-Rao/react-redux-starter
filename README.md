@@ -1,4 +1,4 @@
-[![Circle CI](https://circleci.com/gh/rangle/react-starter.svg?style=svg)](https://circleci.com/gh/rangle/react-starter) [![Stories in Ready](https://badge.waffle.io/rangle/rangle-starter.png?label=ready&title=Ready)](https://waffle.io/rangle/rangle-starter)
+[![Circle CI](https://circleci.com/gh/Kiran-Rao/react-redux-starter.svg?style=shield&circle-token=3f52d227c9a46fdd65d3c8b33b08d02f499a517a)](https://circleci.com/gh/Kiran-Rao/react-redux-starter/)
 
 # react-starter
 
