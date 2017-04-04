@@ -17,7 +17,7 @@ function configureStore(initialState) {
 function _getMiddleware() {
   let middleware = [
     routerMiddleware(browserHistory),
-    thunk,
+    thunk
   ];
 
   if (__DEV__) {
