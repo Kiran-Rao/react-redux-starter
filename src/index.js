@@ -10,14 +10,17 @@ import { syncHistoryWithStore } from 'react-router-redux';
 
 import routes from './store/routes';
 import configureStore from './store/configure-store';
+import DevTools from './containers/DevTools';
 import './styles/index.css';
 
 const store = configureStore({});
 const history = syncHistoryWithStore(browserHistory, store);
 
+const devTools = __DEV__ ? <DevTools store={ store } /> : undefined;
 
 const app = (
   <div>
+    { devTools }
     <Provider store={ store }>
       <Router history={ history }>
         { routes }

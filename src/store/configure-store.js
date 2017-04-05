@@ -3,6 +3,7 @@ import thunk from 'redux-thunk';
 import { browserHistory } from 'react-router';
 import { routerMiddleware } from 'react-router-redux';
 import rootReducer from '../reducers';
+import DevTools from '../containers/DevTools';
 
 const getMiddleware = () => {
   let middleware = [
@@ -20,8 +21,8 @@ const getMiddleware = () => {
 const getEnhancers = () => {
   let enhancers = [];
 
-  if (__DEV__ && window.devToolsExtension) {
-    enhancers = [...enhancers, window.devToolsExtension()];
+  if (__DEV__) {
+    enhancers = [...enhancers, DevTools.instrument()];
   }
 
   return enhancers;
