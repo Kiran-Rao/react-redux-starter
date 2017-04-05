@@ -1,15 +1,13 @@
-[![Circle CI](https://circleci.com/gh/rangle/react-starter.svg?style=svg)](https://circleci.com/gh/rangle/react-starter) [![Stories in Ready](https://badge.waffle.io/rangle/rangle-starter.png?label=ready&title=Ready)](https://waffle.io/rangle/rangle-starter)
+# react-redux-starter
 
-# react-starter
+> Based on Rangle.io [React starter](https://github.com/rangle/react-starter)
 
-> Rangle.io official React + Redux starter
+
+[![Circle CI](https://circleci.com/gh/Kiran-Rao/react-redux-starter.svg?style=shield&circle-token=3f52d227c9a46fdd65d3c8b33b08d02f499a517a)](https://circleci.com/gh/Kiran-Rao/react-redux-starter/)
+
+
 
 ## Getting Started
-
-Use our [starter script](https://www.npmjs.com/package/rangle-starter), with
-`react-starter` as the `techStack` argument.
-
-## npm scripts
 
 ### Dev
 ```bash
@@ -60,19 +58,16 @@ Edit [this file](server/proxy-config.js) to mount such APIs at a given path.
 
 This is an initial version of this setup and will be expanded in the future. Refer to the [issues section](https://github.com/rangle/rangle-starter/issues) to see what needs to be done, or create a [new one](https://github.com/rangle/rangle-starter/issues/new).
 
-Issues for this particular starter project are tagged with the 'es6-react' label.
-
 ## If something doesn't work
 
 We centralize issue management for all rangle starters in the [rangle-starter](https://github.com/rangle/rangle-starter) repository, to help us keep things consistent.
 
 Refer to the [issues section](https://github.com/rangle/rangle-starter/issues) to see if this has already been logged. Otherwise create a [new issue](https://github.com/rangle/rangle-starter/issues/new).
 
-Be sure to tag your new issue with the 'es6-react' label so we can see which starter you're filing it for.
-
 ## License
 
-Copyright (c) 2015 rangle.io
+* Copyright (c) 2015 rangle.io
+* Copyright (c) 2017 Kiran Rao
 
 [MIT License][MIT]
 
