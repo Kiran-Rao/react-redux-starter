@@ -2,8 +2,8 @@ import 'es5-shim';
 import 'es6-shim';
 import 'es6-promise';
 
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
@@ -16,15 +16,16 @@ const store = configureStore({});
 const history = syncHistoryWithStore(browserHistory, store);
 
 
+const app = (
+  <div>
+    <Provider store={ store }>
+      <Router history={ history }>
+        { routes }
+      </Router>
+    </Provider>
+  </div>
+);
+
 if (!__TEST__) {
-  ReactDOM.render(
-    <div>
-      <Provider store={ store }>
-        <Router history={ history }>
-          { routes }
-        </Router>
-      </Provider>
-    </div>,
-    document.getElementById('root')
-  );
+  ReactDOM.render(app, document.getElementById('root'));
 }
