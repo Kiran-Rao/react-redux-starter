@@ -69,8 +69,6 @@
     "karma-spec-reporter": "0.0.26",
     "karma-webpack": "^1.7.0",
     "nodemon": "^1.9.2",
-    "passport": "^0.3.2",
-    "passport-local": "^1.0.0",
     "postcss-cssnext": "^2.4.0",
     "postcss-import": "^8.1.2",
     "postcss-loader": "^0.9.1",
