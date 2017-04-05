@@ -4,17 +4,7 @@ import { browserHistory } from 'react-router';
 import { routerMiddleware } from 'react-router-redux';
 import rootReducer from '../reducers';
 
-function configureStore(initialState) {
-  const store = compose(
-    _getMiddleware(),
-    ..._getEnhancers()
-  )(createStore)(rootReducer, initialState);
-
-  _enableHotLoader(store);
-  return store;
-}
-
-function _getMiddleware() {
+const getMiddleware = () => {
   let middleware = [
     routerMiddleware(browserHistory),
     thunk
@@ -25,26 +15,36 @@ function _getMiddleware() {
   }
 
   return applyMiddleware(...middleware);
-}
+};
 
-function _getEnhancers() {
+const getEnhancers = () => {
   let enhancers = [];
 
   if (__DEV__ && window.devToolsExtension) {
-    enhancers = [...enhancers, window.devToolsExtension() ];
+    enhancers = [...enhancers, window.devToolsExtension()];
   }
 
   return enhancers;
-}
+};
 
-function _enableHotLoader(store) {
+const enableHotLoader = (store) => {
   if (__DEV__ && module.hot) {
     module.hot.accept('../reducers', () => {
       const nextRootReducer = require('../reducers');
       store.replaceReducer(nextRootReducer);
     });
   }
-}
+};
+
+const configureStore = initialState => {
+  const store = compose(
+    getMiddleware(),
+    ...getEnhancers()
+  )(createStore)(rootReducer, initialState);
+
+  enableHotLoader(store);
+  return store;
+};
 
 
 export default configureStore;
