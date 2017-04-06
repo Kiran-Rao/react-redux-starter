@@ -5,7 +5,3 @@ machine:
 dependencies:
   pre:
     - rm -rf node_modules
-
-general:
-  artifacts:
-    - "./coverage"
