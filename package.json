@@ -7,7 +7,6 @@
     "node": "6"
   },
   "scripts": {
-    "prebuild": "npm run clean",
     "build": "cross-env NODE_ENV=production webpack -p",
     "clean": "rimraf dist/ coverage/",
     "cover": "istanbul report --include=**/chrome/coverage-final.json text text-summary",
@@ -18,7 +17,7 @@
     "lint-js-fix": "eslint '**/*.js' --fix --ignore-path .gitignore",
     "postinstall": "npm run build",
     "start": "cross-env NODE_ENV=production http-server ./dist",
-    "pretest": "npm run clean coverage/ && npm run lint",
+    "pretest": "npm run clean && npm run lint",
     "test": "karma start --singleRun true",
     "posttest": "npm run cover",
     "test:watch": "karma start --singleRun false"
