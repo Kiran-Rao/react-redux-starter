@@ -18,7 +18,7 @@
     "postinstall": "npm run build",
     "start": "cross-env NODE_ENV=production http-server ./dist",
     "pretest": "npm run clean && npm run lint",
-    "test": "ava -v --color",
+    "test": "ava",
     "posttest": "npm run cover"
   },
   "dependencies": {
@@ -116,7 +116,9 @@
   ],
   "ava": {
     "babel": "inherit",
-    "require": ["babel-register"]
+    "color": true,
+    "require": ["babel-register"],
+    "verbose": true
   },
   "repository": {
     "type": "git",
