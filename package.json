@@ -11,6 +11,7 @@
     "clean": "rimraf dist/ coverage/",
     "cover": "istanbul report --include=**/chrome/coverage-final.json text text-summary",
     "dev": "cross-env NODE_ENV=development webpack-dev-server -d --inline --hot --progress --no-info",
+    "fix": "npm run lint-js-fix && npm run update-snapshots",
     "lint": "npm run lint-js && npm run lint-css",
     "lint-css": "stylelint './src/**/*.css'",
     "lint-js": "eslint '**/*.js' --ignore-path .gitignore",
@@ -19,7 +20,8 @@
     "start": "cross-env NODE_ENV=production http-server ./dist",
     "pretest": "npm run clean && npm run lint",
     "test": "ava",
-    "posttest": "npm run cover"
+    "posttest": "npm run cover",
+    "update-snapshots": "ava --update-snapshots"
   },
   "dependencies": {
     "autoprefixer": "^6.3.3",
