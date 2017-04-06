@@ -5,3 +5,5 @@ machine:
 dependencies:
   pre:
     - rm -rf node_modules
+  override:
+    - npm install --ignore-scripts
