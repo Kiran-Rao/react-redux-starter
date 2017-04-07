@@ -32,19 +32,9 @@ Open `http://localhost:8080` in your browser.
 
 ### Tests
 
-#### Single Run
 ```bash
 $ npm run test
 ```
-
-#### Watch Files
-```bash
-$ npm run test:watch
-```
-
-#### Coverage
-Code coverage is generated automatically after a `npm run test` run (but not
-`test:watch`).
 
 #### Connecting to remote APIs
 
@@ -54,15 +44,9 @@ developing your software.
 
 Edit [this file](server/proxy-config.js) to mount such APIs at a given path.
 
-## Improvements
+## Bugs and Improvements
 
-This is an initial version of this setup and will be expanded in the future. Refer to the [issues section](https://github.com/rangle/rangle-starter/issues) to see what needs to be done, or create a [new one](https://github.com/rangle/rangle-starter/issues/new).
-
-## If something doesn't work
-
-We centralize issue management for all rangle starters in the [rangle-starter](https://github.com/rangle/rangle-starter) repository, to help us keep things consistent.
-
-Refer to the [issues section](https://github.com/rangle/rangle-starter/issues) to see if this has already been logged. Otherwise create a [new issue](https://github.com/rangle/rangle-starter/issues/new).
+This is an initial version of this setup and will be expanded in the future. If you notice and bugs, please create an issue or pull request.
 
 ## License
 
