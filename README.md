@@ -6,12 +6,12 @@
 [![Circle CI](https://circleci.com/gh/Kiran-Rao/react-redux-starter.svg?style=shield&circle-token=3f52d227c9a46fdd65d3c8b33b08d02f499a517a)](https://circleci.com/gh/Kiran-Rao/react-redux-starter/)
 
 
-
 ## Getting Started
 
 ### Dev
 ```bash
-$ npm run dev
+npm install
+npm run dev
 ```
 
 This runs a development mode server with live reload etc.
