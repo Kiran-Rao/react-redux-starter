@@ -31,5 +31,6 @@ server.listen(PORT, (err) => {
     return;
   }
 
-  winston.info(`Listening on port ${PORT}`);
+  const addr = server.address();
+  winston.info(`Listening on at ${addr.address}:${addr.port}`);
 });
