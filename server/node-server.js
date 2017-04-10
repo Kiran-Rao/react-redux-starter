@@ -3,6 +3,7 @@ const http = require('http');
 const winston = require('winston');
 const helmet = require('helmet');
 const nodeAppServer = require('./node-app-server');
+const nodeApiServer = require('./node-api-server');
 const bodyParser = require('body-parser');
 
 /**
@@ -21,6 +22,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Serve the distributed assets and allow HTML5 mode routing. Must be last.
+nodeApiServer(app);
 nodeAppServer(app);
 
 // Start up the server.
