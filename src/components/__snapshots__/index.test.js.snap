@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button snapshot 1`] = `
+<button
+  onClick={[Function]}
+>
+  aoeu
+</button>
+`;
+
+exports[`Welcome snapshot 1`] = `
+<div>
+  <div>
+    Hello World!
+  </div>
+  <div>
+    The count is: 
+    5
+  </div>
+</div>
+`;
