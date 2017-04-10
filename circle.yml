@@ -7,3 +7,7 @@ dependencies:
     - rm -rf node_modules
   override:
     - npm install --ignore-scripts
+
+test:
+  pre:
+    - npm run lint

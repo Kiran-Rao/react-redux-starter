@@ -7,7 +7,6 @@
     "node": "6"
   },
   "scripts": {
-    "ava": "ava",
     "build": "cross-env NODE_ENV=production webpack -p",
     "clean": "rimraf dist/",
     "dev:server": "cross-env NODE_ENV=development nodemon --use_strict server/node-server.js --watch api server",
@@ -20,7 +19,7 @@
     "lint-js-fix": "eslint '**/*.js' --fix --ignore-path .gitignore",
     "postinstall": "npm run build",
     "start": "cross-env NODE_ENV=production node --use_strict server/node-server.js",
-    "test": "npm run lint && npm run ava",
+    "test": "ava",
     "update-snapshots": "ava --update-snapshots"
   },
   "dependencies": {
