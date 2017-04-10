@@ -2,27 +2,27 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import { increment, decrement } from '../actions/counter';
-import Button from '../components/button';
+import { Button, Welcome } from '../components';
 
-const App = (props) => {
+
+const App = ({ count, increase, decrease }) => {
   return (
     <div>
-      <div>
-        Hello world! The count is: {props.count}
-      </div>
-      <Button title="Increase" click={props.increment} />
-      <Button title="Decrease" click={props.decrement} />
+      <Welcome count={count} />
+      <Button title="Increase" click={increase} />
+      <Button title="Decrease" click={decrease} />
     </div>
   );
 };
+
 
 const mapStateToProps = (state) => ({
   count: state.counter.get('count')
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  increment: () => dispatch(increment()),
-  decrement: () => dispatch(decrement())
+  increase: () => dispatch(increment()),
+  decrease: () => dispatch(decrement())
 });
 
 export default connect(

@@ -14,9 +14,6 @@ const counterReducer = (state = INITIAL_STATE, action = {}) => {
   case DECREMENT_COUNTER:
     return state.update('count', (value) => value - 1);
 
-  case RESET_COUNTER:
-    return state.merge(INITIAL_STATE);
-
   default:
     return state;
   }
