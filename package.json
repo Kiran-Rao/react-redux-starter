@@ -10,7 +10,7 @@
     "build": "cross-env NODE_ENV=production webpack -p",
     "clean": "rimraf dist/",
     "dev:server": "cross-env NODE_ENV=development nodemon --use_strict server/node-server.js --watch api server",
-    "dev:client": "cross-env NODE_ENV=development webpack-dev-server -d --inline --hot --progress --no-info --port 3000",
+    "dev:client": "cross-env NODE_ENV=development webpack-dev-server -d --inline --hot --progress --no-info --port 3000 --host 0.0.0.0",
     "dev": "concurrently -r 'npm run dev:client' 'npm run dev:server'",
     "fix": "npm run lint-js-fix && npm run update-snapshots",
     "lint": "npm run lint-js && npm run lint-css",
