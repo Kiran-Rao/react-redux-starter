@@ -41,7 +41,6 @@
     "cross-env": "^2.0.0",
     "css-loader": "^0.23.0",
     "cssnano": "^3.7.2",
-    "denodeify": "^1.2.1",
     "es5-shim": "^4.5.9",
     "es6-promise": "^3.2.1",
     "es6-shim": "^0.35.1",
@@ -49,8 +48,6 @@
     "eslint-loader": "^1.4.1",
     "eslint-plugin-react": "^6.0.0",
     "eslint-plugin-ava": "^4.2.0",
-    "file-loader": "^0.9.0",
-    "history": "^3.0.0",
     "html-webpack-plugin": "^2.9.0",
     "immutable": "^3.7.5",
     "json-loader": "^0.5.4",
@@ -83,7 +80,6 @@
     "whatwg-fetch": "^1.0.0",
     "express": "^4.13.3",
     "helmet": "^2.0.0",
-    "http-proxy": "^1.12.1",
     "winston": "^2.1.1"
   },
   "devDependencies": {

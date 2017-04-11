@@ -21,7 +21,6 @@ app.use(helmet());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Serve the distributed assets and allow HTML5 mode routing. Must be last.
 nodeApiServer(app);
 nodeAppServer(app);
 
