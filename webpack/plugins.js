@@ -14,8 +14,7 @@ const basePlugins = [
     chunksSortMode: 'dependency',
     template: './src/index.html',
     inject: 'body'
-  }),
-  new webpack.NoErrorsPlugin()
+  })
 ];
 
 const devPlugins = [
@@ -35,7 +34,8 @@ const prodPlugins = [
     compress: {
       warnings: false
     }
-  })
+  }),
+  new webpack.NoErrorsPlugin()
 ];
 
 module.exports = basePlugins
