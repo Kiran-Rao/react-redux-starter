@@ -2,7 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import { increment, decrement } from '../actions/counter';
-import { Button, Welcome } from '../components';
+import Welcome from '../components/Welcome';
+import Button from '../components/Button';
 
 
 const App = ({ count, increase, decrease }) => {
