@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { increment, decrement } from '../actions/counter';
+import { increment, decrement } from '../redux/counter/actions';
 import Welcome from '../components/Welcome';
 import Button from '../components/Button';
 
