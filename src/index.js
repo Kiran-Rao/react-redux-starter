@@ -8,8 +8,8 @@ import { Provider } from 'react-redux';
 import { Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 
-import routes from './store/routes';
-import configureStore from './store/configure-store';
+import routes from './routes';
+import configureStore from './redux/configure-store';
 import DevTools from './containers/DevTools';
 import './styles/index.css';
 
