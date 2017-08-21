@@ -1,4 +1,4 @@
-import { INCREMENT_COUNTER, DECREMENT_COUNTER } from '../constants';
+import { INCREMENT_COUNTER, DECREMENT_COUNTER } from './constants';
 import { fromJS } from 'immutable';
 
 const INITIAL_STATE = fromJS({

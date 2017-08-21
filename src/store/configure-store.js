@@ -2,7 +2,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import { browserHistory } from 'react-router';
 import { routerMiddleware } from 'react-router-redux';
-import rootReducer from '../reducers';
+import rootReducer from '../redux/rootReducer';
 import DevTools from '../containers/DevTools';
 
 const getMiddleware = () => {
@@ -30,8 +30,8 @@ const getEnhancers = () => {
 
 const enableHotLoader = (store) => {
   if (__DEV__ && module.hot) {
-    module.hot.accept('../reducers', () => {
-      const nextRootReducer = require('../reducers');
+    module.hot.accept('../redux/rootReducer', () => {
+      const nextRootReducer = require('../redux/rootReducer');
       store.replaceReducer(nextRootReducer);
     });
   }
