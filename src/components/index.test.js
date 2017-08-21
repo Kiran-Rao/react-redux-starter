@@ -2,7 +2,8 @@ import test from 'ava';
 import React from 'react';
 import render from 'react-test-renderer';
 
-import { Button, Welcome } from './';
+import Button from './Button';
+import Welcome from './Welcome';
 
 test('Button snapshot', t => {
   const tree = render.create(<Button title="aoeu" click={() => {}} />).toJSON();
