@@ -20,6 +20,7 @@
 /**
  * ES6
  */
+    "arrow-spacing": [2, { "before": true, "after": true }],
     "no-var": 2,
     "prefer-const": 2,
 
