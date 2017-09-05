@@ -16,7 +16,7 @@ test.cb('get', t => {
     .end((err, res) => {
       t.falsy(err);
       t.is(res.status, 200);
-      t.is(res.body.status, 'ok');
+      t.is(res.body.status, 'Response from server');
       t.end();
     });
 });
@@ -27,7 +27,7 @@ test.cb('post', t => {
     .end((err, res) => {
       t.falsy(err);
       t.is(res.status, 200);
-      t.is(res.body.status, 'ok');
+      t.is(res.body.status, 'Response from server');
       t.end();
     });
 });

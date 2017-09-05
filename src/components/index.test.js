@@ -11,6 +11,6 @@ test('Button snapshot', t => {
 });
 
 test('Welcome snapshot', t => {
-  const tree = render.create(<Welcome count={5} />).toJSON();
+  const tree = render.create(<Welcome count={5} message="hi" />).toJSON();
   t.snapshot(tree);
 });

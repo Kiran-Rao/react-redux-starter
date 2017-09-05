@@ -1,3 +1,3 @@
 module.exports = (req, res) => {
-  res.send({ status: 'ok' });
+  res.send({ status: 'Response from server' });
 };
