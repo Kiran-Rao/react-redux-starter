@@ -11,7 +11,7 @@ exports[`Button snapshot 1`] = `
 exports[`Welcome snapshot 1`] = `
 <div>
   <div>
-    Hello World!
+    hi
   </div>
   <div>
     The count is: 

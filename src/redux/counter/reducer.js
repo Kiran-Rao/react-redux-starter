@@ -1,8 +1,9 @@
-import { INCREMENT_COUNTER, DECREMENT_COUNTER } from './constants';
+import { INCREMENT_COUNTER, DECREMENT_COUNTER, SET_MESSAGE } from './constants';
 import { fromJS } from 'immutable';
 
 const INITIAL_STATE = fromJS({
-  count: 0
+  count: 0,
+  message: 'Initial Message'
 });
 
 const counterReducer = (state = INITIAL_STATE, action = {}) => {
@@ -13,6 +14,9 @@ const counterReducer = (state = INITIAL_STATE, action = {}) => {
 
   case DECREMENT_COUNTER:
     return state.update('count', (value) => value - 1);
+
+  case SET_MESSAGE:
+    return state.set('message', fromJS(action.payload));
 
   default:
     return state;

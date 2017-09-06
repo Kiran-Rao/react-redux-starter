@@ -2,7 +2,7 @@ import React from 'react';
 
 const Welcome = (props) => (
   <div>
-    <div>Hello World!</div>
+    <div>{props.message}</div>
     <div>The count is: {props.count}</div>
   </div>
 );
