@@ -32,7 +32,7 @@ const enableHotLoader = (store) => {
   if (__DEV__ && module.hot) {
     module.hot.accept('./rootReducer', () => {
       const nextRootReducer = require('./rootReducer');
-      store.replaceReducer(nextRootReducer);
+       store.replaceReducer(nextRootReducer);
     });
   }
 };
