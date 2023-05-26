@@ -1,3 +1,5 @@
+# ⚠️ This project contained boilerplate required for setting up react/redux app with webpack, hot realoading etc. This problem has been largely solved by next.js or equivalent. It is no longer mantained. ⚠️
+
 # react-redux-starter
 
 [![Circle CI](https://circleci.com/gh/Kiran-Rao/react-redux-starter.svg?style=shield&circle-token=3f52d227c9a46fdd65d3c8b33b08d02f499a517a)](https://circleci.com/gh/Kiran-Rao/react-redux-starter/)
